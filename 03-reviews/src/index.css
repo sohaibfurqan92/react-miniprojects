@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  padding: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(2, 24, 49);
+}
+
+.separator {
+  width: 8rem;
+  height: 0.3rem;
+  background: rgb(2, 24, 49);
+  margin: 1rem 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+main .reviews {
+  margin: 2rem 0;
+}
+
+.review {
+  text-align: center;
+  background: #fff;
+  padding: 2rem;
+}
+
+.review .person-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+.review .person-name,
+.review .person-job {
+  margin: 0.5rem 0;
+}
+
+.review .person-job {
+  text-transform: uppercase;
+}
+
+.review .btn-container {
+  margin: 1rem 0;
+}
+
+.review p {
+  line-height: 1.7;
+}
+
+.prev-btn,
+.next-btn {
+  font-size: 1.3rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.surprise-btn {
+  font-size: 1.2rem;
+  border: 1px solid rgb(2, 24, 49);
+  padding: 0.5rem;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.surprise-btn:hover {
+  background: rgba(2, 24, 49, 0.8);
+  color: #fff;
+}
