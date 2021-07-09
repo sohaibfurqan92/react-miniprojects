@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #f4f4f4;
+}
+
+h3 {
+  color: rgb(28, 86, 196);
+}
+
+.lorem-text {
+  margin: 2rem;
+  padding: 1rem;
+}
+
+form {
+  margin: 2rem 0;
+}
+
+.submit-btn {
+  margin-left: 0.5rem;
+  padding: 0.2rem;
+  color: #fff;
+  background: rgb(28, 86, 196);
+}
+
+p {
+  margin: 0.5rem 0;
+  line-height: 1.5rem;
+}
+
+.section-center {
+  width: 80vw;
+  margin: 2rem auto;
+  text-align: center;
+}

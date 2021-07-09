@@ -1,5 +1,45 @@
+import { useState } from 'react';
+import data from './data';
+
 function App() {
-  return <h1>Lorem Ipsum Starter</h1>;
+  const [count, setCount] = useState(0);
+  const [text, setText] = useState([]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let amount = parseInt(count);
+    if (amount <= 0) {
+      amount = 1;
+    }
+    if (amount > 8) {
+      amount = 8;
+    }
+
+    setText(data.slice(0, amount));
+  };
+  return (
+    <section className='section-center'>
+      <h3>Tired of boring Lorem Ipsum?</h3>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor='paras'>Paragraphs:</label>
+        <input
+          type='number'
+          name=''
+          id='paras'
+          value={count}
+          onChange={(e) => {
+            setCount(e.target.value);
+          }}
+        />
+        <button className='submit-btn'>Generate</button>
+      </form>
+      <article className='lorem-text'>
+        {text.map((paragraph, index) => {
+          return <p key={index}>{paragraph}</p>;
+        })}
+      </article>
+    </section>
+  );
 }
 
 export default App;
