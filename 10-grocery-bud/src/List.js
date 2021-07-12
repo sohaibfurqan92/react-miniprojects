@@ -1,7 +1,7 @@
 import React from 'react';
 import { BiTrash, BiEdit } from 'react-icons/bi';
 
-const List = ({ list }) => {
+const List = ({ list, deleteItem, editItem }) => {
   return (
     <section className='list'>
       {list.map((listItem, index) => {
@@ -11,8 +11,18 @@ const List = ({ list }) => {
           <article>
             <h3>{name}</h3>
             <div className='btn-container'>
-              <BiTrash className='trash-icon' />
-              <BiEdit className='edit-icon' />
+              <BiTrash
+                className='trash-icon'
+                onClick={() => {
+                  deleteItem(id);
+                }}
+              />
+              <BiEdit
+                className='edit-icon'
+                onClick={() => {
+                  editItem(id);
+                }}
+              />
             </div>
           </article>
         );
