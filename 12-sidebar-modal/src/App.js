@@ -1,5 +1,15 @@
+import Home from './Home';
+import Modal from './Modal';
+import Sidebar from './Sidebar';
+
 function App() {
-  return <h1>Sidebar Modal Starter</h1>;
+  return (
+    <>
+      <Home />
+      <Modal />
+      <Sidebar />
+    </>
+  );
 }
 
 export default App;
