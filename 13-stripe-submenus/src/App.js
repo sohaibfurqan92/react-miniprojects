@@ -1,5 +1,17 @@
+import Hero from './Hero';
+import Navbar from './Navbar';
+import Submenu from './Submenu';
+import Sidebar from './Sidebar';
+
 function App() {
-  return <h1>Stripe submenu starter</h1>;
+  return (
+    <>
+      <Navbar />
+      <Sidebar />
+      <Hero />
+      <Submenu />
+    </>
+  );
 }
 
 export default App;
